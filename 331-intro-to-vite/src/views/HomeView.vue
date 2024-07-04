@@ -42,13 +42,15 @@ const events = ref<Event[]>([
 </script>
 
 <template>
-  <div class="home">
+      <h1>Events For Good</h1>
+      <!-- new element -->
+  <div class="events">
     <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
 </template>
 
 <style scoped>
-.home {
+.events {
   margin-top: 2%;
   display: flex;
   flex-direction: column;
